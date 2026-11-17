@@ -38,7 +38,7 @@ With the hash in hand, I moved to the Password Cracker tool:
 *   **Why Extract the Hash?**: You don't crack the PDF file itself; you extract the cryptographic hash and attack *that*. It's much faster and easier to process.
 *   **The Power of Dictionary Attacks**: Dictionary attacks don't guess randomly; they use lists of previously leaked, common, or predictable passwords. As seen in the lab, `password1` was found almost instantly because it's an incredibly common variation.
 *   **Local vs. Online Attacks**: Notice the tool specifies "Nothing is uploaded, the PDF is parsed locally." In real-world red teaming, you extract the hash locally and use massive GPU rigs (like a cracking server with multiple RTX 4090s) to crack the hash offline, bypassing account lockouts entirely.
-*   **Beyond the Basics**: While a 100-word list failed to find complex passwords, real-world attackers use lists like `rockyou.txt` (14+ million passwords) combined with rules (e.g., appending numbers or symbols) to crack complex-looking passwords.
+*   **Beyond the Basics**: While a 100-word list failed to find complex passwords, real-world attackers use lists with over 14+ million passwords combined with rules (e.g., appending numbers or symbols) to crack complex-looking passwords.
 
 ## 🛡️ Security Implications & Mitigation
 This lab proved how easily weak passwords fall. `password1` took a fraction of a second to crack.
@@ -48,3 +48,11 @@ This lab proved how easily weak passwords fall. `password1` took a fraction of a
 
 ## ⚠️ Disclaimer
 *This lab was performed using authorized, web-based educational tools provided by Networkwalks Academy. Hash extraction and password cracking must only be performed on systems and files you own or have explicit permission to test.*
+
+
+# Author
+Nicholas Gyemfi 
+
+Cybersecurity Entusiast
+
+LinkedIn: [https://www.linkedin.com/in/nic-gyim/](https://www.linkedin.com/in/nic-gyim/)
